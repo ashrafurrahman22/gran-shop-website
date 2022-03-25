@@ -1,0 +1,10 @@
+.product img {
+    width: 300px;
+}
+
+.product {
+    background-color: aquamarine;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
