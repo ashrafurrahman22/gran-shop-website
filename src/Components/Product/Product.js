@@ -4,17 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 
-const Product = ({product}) => {
-    const {name, price, img, ml} = product
+const Product = ({product, handleAddToCart}) => {
+    const {name, price, img, ml} = product;
+
     return (
         <div className='product'>
             <img src={img} alt="" />
             <div className="specification">
             <h3>{name}</h3>
             <h4>Ml: {ml}</h4>
-            <h3>Price: {price}</h3>
+            <h3>Price: ${price}</h3>
             </div>
-            <button className='cartBtn'>Add To Cart<FontAwesomeIcon icon={faCartShopping} />  </button>
+            <button onClick={ () => handleAddToCart(product)} className='cartBtn'>Add To Cart<FontAwesomeIcon icon={faCartShopping} />  </button>
         </div>
     );
 };
