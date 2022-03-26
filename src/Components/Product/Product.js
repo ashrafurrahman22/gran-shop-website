@@ -12,8 +12,8 @@ const Product = ({product, handleAddToCart}) => {
             <img src={img} alt="" />
             <div className="specification">
             <h3>{name}</h3>
-            <h4>Ml: {ml}</h4>
-            <h3>Price: ${price}</h3>
+            <h5>Ml: {ml}</h5>
+            <h4>Price: ${price}</h4>
             </div>
             <button onClick={ () => handleAddToCart(product)} className='cartBtn'>Add To Cart<FontAwesomeIcon icon={faCartShopping} />  </button>
         </div>

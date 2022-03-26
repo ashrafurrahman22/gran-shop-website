@@ -10,6 +10,9 @@ const Products = () => {
      const [cart, setCart] = useState([])
     //  console.log(cart)
 
+    // choose button handling
+    const [choose, setChoose] = useState([])
+
     useEffect( () => {
         fetch('products.json')
         .then(res => res.json())
@@ -20,16 +23,20 @@ const Products = () => {
     const handleAddToCart = (product) => {
 
         const exists = cart.find( item => item == product)
-        // console.log(exists)
 
         if((cart.length < 4) && (!exists)) {
             const newCart = [...cart, product];
             setCart(newCart);
         }
-        
     }
 
-    
+    // handle choose one for me
+    const handleChoose = () => {
+    const randomItem = parseInt(Math.round(Math.random() * cart.length))
+       setChoose(randomItem);
+    }
+    console.log(choose)
+
     // handle remove all button
     const handleRemoveAll = () => {
         setCart([])
@@ -56,7 +63,10 @@ const Products = () => {
 
                          </p> )
                }
-            <button  id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
+               <div>
+                   <h4>We Choosed for you</h4>
+               </div>
+            <button onClick={handleChoose} id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
             <button onClick={ handleRemoveAll } id='btn'>Remove All <FontAwesomeIcon icon={faTrash} /> </button>
            </div>
         </div>
