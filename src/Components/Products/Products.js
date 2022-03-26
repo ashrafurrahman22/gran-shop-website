@@ -11,7 +11,7 @@ const Products = () => {
     //  console.log(cart)
 
     // choose button handling
-    const [choose, setChoose] = useState([])
+    const [choose, setChoose] = useState();
 
     useEffect( () => {
         fetch('products.json')
@@ -23,19 +23,25 @@ const Products = () => {
     const handleAddToCart = (product) => {
 
         const exists = cart.find( item => item == product)
+        // console.log(exists)
 
         if((cart.length < 4) && (!exists)) {
             const newCart = [...cart, product];
             setCart(newCart);
         }
     }
-
+    
+    // console.log(cart)
     // handle choose one for me
+    
     const handleChoose = () => {
-    const randomItem = parseInt(Math.round(Math.random() * cart.length))
-       setChoose(randomItem);
+        if (cart.length !== 4) return;
+        setChoose("");
+        const randomItem = parseInt(Math.round(Math.random() * cart.length))
+        setChoose(cart[randomItem]);
+        // console.log(choose)
     }
-    console.log(choose)
+    // console.log(choose)
 
     // handle remove all button
     const handleRemoveAll = () => {
@@ -56,15 +62,16 @@ const Products = () => {
            <div className='order-container'>
            <h4 style={{textAlign:'center'}}>Order History</h4>
                {
-                   cart.map (item => <p id='oderedinfo' key={item.id}>
+                   cart.map (item => <div id='oderedinfo' key={item.id}>
                        
                          <img src={item.img} alt="" /> 
                          <p>{item.name}</p>
 
-                         </p> )
+                         </div> )
                }
                <div>
-                   <h4>We Choosed for you</h4>
+                   <img src={choose?.img} alt="" />
+                   <h4>We Choose for you {choose?.name}</h4>
                </div>
             <button onClick={handleChoose} id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
             <button onClick={ handleRemoveAll } id='btn'>Remove All <FontAwesomeIcon icon={faTrash} /> </button>
