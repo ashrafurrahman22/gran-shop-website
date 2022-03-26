@@ -46,7 +46,7 @@ const Products = () => {
     // handle remove all button
     const handleRemoveAll = () => {
         setCart([])
-        setChoose([""])
+        setChoose("")
     }
 
     return (
@@ -73,7 +73,12 @@ const Products = () => {
                <div>
                    <h3>You can choose this</h3>
                    <div id='choosenInfo'>
+                   <div>
+                   <img src={choose?.img} alt="Click Choose" />
+                   </div>
+                   <div>
                    <h4>{choose?.name}</h4>
+                   </div>
                    </div>
                    
                </div>
