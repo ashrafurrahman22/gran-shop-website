@@ -1,92 +1,107 @@
 [
     {
-      "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+      "id": "1",
       "name": "Asus Al Arabia",
       "price": 220,
+      "ml": "50ml",
       "img": "https://img.freepik.com/free-photo/concept-perfume-isolated-white-background_185193-76658.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+      "id": "2",
       "name": "Gucchi Rush",
       "price": 190,
+      "ml": "75ml",
       "img": "https://img.freepik.com/free-photo/bottle-female-perfume-isolated-white-background_185193-74537.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+      "id": "3",
       "name": "Amir Al Oudh",
       "price": 245,
+      "ml": "100ml",
       "img": "https://img.freepik.com/free-photo/concept-fragrant-flavored-perfume-close-up_185193-76667.jpg?size=626&ext=jpg&ga=GA1.1.1163921992.1648226194"
     },
     {
-      "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+      "id": "4",
       "name": "Jannatul Ferdous",
       "price": 229,
+      "ml": "50ml",
       "img": "https://img.freepik.com/free-photo/concept-fragrant-flavored-perfume-close-up_185193-76676.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+      "id": "5",
       "name": "Attar Al Kaba",
       "price": 287,
+      "ml": "105ml",
       "img": "https://img.freepik.com/free-photo/concept-fragrant-flavored-perfume-close-up_185193-75717.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+      "id": "6",
       "name": "Dunhil Desires",
       "price": 138,
+      "ml": "50ml",
       "img": "https://img.freepik.com/free-psd/perfume-bottle-with-box-mockup_58466-13392.jpg?t=st=1648230277~exp=1648230877~hmac=14d4355ed8f9aa42b95f617ed9593e089bb00e26d7df05d1af49067a9d4aa0b6&w=740"
     },
     {
-      "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
+      "id": "7",
       "name": "Rose",
       "price": 226,
+      "ml": "80ml",
       "img": "https://img.freepik.com/free-psd/perfume-bottle-with-box-mockup_358694-1172.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
+      "id": "8",
       "name": "Black Oudh",
       "price": 319,
+      "ml": "90ml",
       "img": "https://img.freepik.com/free-psd/perfume-bottle-logo-mockup-brand-identity-3d-render_360590-321.jpg?size=338&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
+      "id": "9",
       "name": "White Oudh",
       "price": 260,
+      "ml": "110ml",
       "img": "https://img.freepik.com/free-photo/perfume-bottle-white-fabric-background_160204-3313.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "ac44095f-230e-4502-8816-dea3eaae8320",
+      "id": "10",
       "name": "Mukhallat",
       "price": 437,
+      "ml": "120ml",
       "img": "https://img.freepik.com/free-photo/front-view-black-fragrance-bottle-with-yellow-design-isolated-white-wall_140725-11600.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "d0803f97-966f-4296-ad31-a7f70fc86fab",
+      "id": "11",
       "name": "Mask Fakher",
       "price": 146,
+      "ml": "45ml",
       "img": "https://img.freepik.com/free-psd/perfume-packaging-mockup_58466-13383.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
+      "id": "12",
       "name": "Fawakie",
       "price": 109,
+      "ml": "65ml",
       "img": "https://img.freepik.com/free-photo/front-view-yellow-fragrance-bottle-with-golden-cap-white-wall_140725-11697.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
+      "id": "13",
       "name": "Gilap E Kaba",
       "price": 630,
+      "ml": "86ml",
       "img": "https://img.freepik.com/free-photo/composition-with-bottle-female-perfume-close-up_185193-74189.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
+      "id": "14",
       "name": "Mask Amber",
       "price": 234,
+      "ml": "50ml",
       "img": "https://img.freepik.com/free-photo/concept-female-perfume-space-text_185193-74183.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     },
     {
-      "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
+      "id": "15",
       "name": "Polo",
       "price": 122,
+      "ml": "100ml",
       "img": "https://img.freepik.com/free-photo/concept-natural-perfume-wooden-table_185193-73990.jpg?size=626&ext=jpg&ga=GA1.2.1163921992.1648226194"
     }
   ]
