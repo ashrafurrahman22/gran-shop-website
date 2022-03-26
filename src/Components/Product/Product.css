@@ -6,5 +6,19 @@
     background-color: aquamarine;
     border-radius: 15px;
     padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
+}
+.specification {
+    text-align: left;
+}
+
+.cartBtn {
+    text-align: center;
+    gap: 5px;
+    padding: 13px;
+    border-radius: 20px;
+    color: whitesmoke;
+    background-color: #2c974b;
+    font-family: 'Times New Roman', Times, serif;
 }
