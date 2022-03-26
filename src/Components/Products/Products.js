@@ -22,7 +22,13 @@ const Products = () => {
         setCart(newCart);
     }
 
-    
+    const handleChoose = (id) => {
+        Math.random(id)
+    }
+
+    const handleRemoveAll = () => {
+        setCart([])
+    }
 
     return (
         <div className='main-container'>
@@ -45,8 +51,8 @@ const Products = () => {
                          <button id='delbtn'><FontAwesomeIcon icon={faTrash} /></button>
                          </p> )
                }
-            <button id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
-            <button id='btn'>Remove All <FontAwesomeIcon icon={faTrash} /> </button>
+            <button onClick={handleChoose} id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
+            <button onClick={ handleRemoveAll } id='btn'>Remove All <FontAwesomeIcon icon={faTrash} /> </button>
            </div>
         </div>
     );
