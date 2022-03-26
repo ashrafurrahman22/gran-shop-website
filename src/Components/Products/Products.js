@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Products.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping, faDeleteLeft, faRemove, faStar, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Products = () => {
     const [products, setProducts] = useState([])
@@ -36,8 +38,15 @@ const Products = () => {
            <div className='order-container'>
            <h4 style={{textAlign:'center'}}>Order History</h4>
                {
-                   cart.map (item => <p key={item.id}>{item.name}</p> )
+                   cart.map (item => <p id='oderedinfo' key={item.id}>
+                       
+                         <img src={item.img} alt="" /> 
+                         <p>{item.name}</p>
+                         <button id='delbtn'><FontAwesomeIcon icon={faTrash} /></button>
+                         </p> )
                }
+            <button id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
+            <button id='btn'>Remove All <FontAwesomeIcon icon={faTrash} /> </button>
            </div>
         </div>
     );
