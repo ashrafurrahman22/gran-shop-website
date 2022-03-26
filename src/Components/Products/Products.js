@@ -18,14 +18,19 @@ const Products = () => {
 
     // handling add to cart button
     const handleAddToCart = (product) => {
-        const newCart = [...cart, product];
-        setCart(newCart);
+
+        const exists = cart.find( item => item == product)
+        // console.log(exists)
+
+        if((cart.length < 4) && (!exists)) {
+            const newCart = [...cart, product];
+            setCart(newCart);
+        }
+        
     }
 
-    const handleChoose = (id) => {
-        Math.random(id)
-    }
-
+    
+    // handle remove all button
     const handleRemoveAll = () => {
         setCart([])
     }
@@ -48,10 +53,10 @@ const Products = () => {
                        
                          <img src={item.img} alt="" /> 
                          <p>{item.name}</p>
-                         <button id='delbtn'><FontAwesomeIcon icon={faTrash} /></button>
+
                          </p> )
                }
-            <button onClick={handleChoose} id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
+            <button  id='btn'>Choose one for me <FontAwesomeIcon icon={faStar} /></button> <br /> <br />
             <button onClick={ handleRemoveAll } id='btn'>Remove All <FontAwesomeIcon icon={faTrash} /> </button>
            </div>
         </div>
